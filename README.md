@@ -42,6 +42,7 @@ The pipeline ensures consistent and repeatable deployments for both **AWS Elasti
 
 ---
 
+
 ## CI/CD Workflow Structure
 
 The CI/CD configuration is defined under:
