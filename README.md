@@ -48,9 +48,11 @@ The CI/CD configuration is defined under:
 
 ```text
 .github/workflows/
-├── ecrimagepush.yml
-├── deploy-eb.yml
-└── deploy-ecs.yml
+├── ecrimagepush.yml      # Builds the application, creates a Docker image, and pushes it to Amazon ECR
+├── deploy-eb.yml         # Deploys the Docker image to AWS Elastic Beanstalk using Dockerrun.aws.json
+└── deploy-ecs.yml        # Deploys the Docker image to Amazon ECS (Fargate) using the ECS task definition
+
+```text
 ---
 
 ## CI/CD Workflow Descriptions
